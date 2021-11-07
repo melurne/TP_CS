@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 - Flatpak) (preloaded format=pdflatex 2021.10.11)  7 NOV 2021 10:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 - Flatpak) (preloaded format=pdflatex 2021.10.11)  7 NOV 2021 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -186,6 +186,30 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
+(/app/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count197
+\lst@gtempboxa=\box47
+\lst@token=\toks16
+\lst@length=\count198
+\lst@currlwidth=\dimen145
+\lst@column=\count199
+\lst@pos=\count266
+\lst@lostspace=\dimen146
+\lst@width=\dimen147
+\lst@newlines=\count267
+\lst@lineno=\count268
+\lst@maxwidth=\dimen148
+
+(/app/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count269
+\lst@skipnumbers=\count270
+\lst@framebox=\box48
+)
+(/app/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \@indexfile=\write3
 \openout3 = `rapport.idx'.
 
@@ -193,43 +217,43 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Writing index file rapport.idx
 (/app/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count197
-\l__pdf_internal_box=\box47
+\l__color_backend_stack_int=\count271
+\l__pdf_internal_box=\box49
 )
 (./rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
  (/app/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count198
-\scratchdimen=\dimen145
-\scratchbox=\box48
-\nofMPsegments=\count199
-\nofMParguments=\count266
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count267
-\MPscratchDim=\dimen146
-\MPnumerator=\count268
-\makeMPintoPDFobject=\count269
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count272
+\scratchdimen=\dimen149
+\scratchbox=\box50
+\nofMPsegments=\count273
+\nofMParguments=\count274
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count275
+\MPscratchDim=\dimen150
+\MPnumerator=\count276
+\makeMPintoPDFobject=\count277
+\everyMPtoPDFconversion=\toks18
 ) (/app/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -239,7 +263,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 8.
+Package hyperref Info: Link coloring OFF on input line 9.
 
 (/app/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -250,30 +274,31 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/app/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count270
+\c@section@level=\count278
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
 
 (./rapport.out) (./rapport.out)
 \@outlinefile=\write4
 \openout4 = `rapport.out'.
 
+\c@lstlisting=\count279
 <~/templates//logopopo.png, id=40, 1204.5pt x 766.865pt>
 File: ~/templates//logopopo.png Graphic file (type png)
 <use ~/templates//logopopo.png>
-Package pdftex.def Info: ~/templates//logopopo.png  used on input line 10.
+Package pdftex.def Info: ~/templates//logopopo.png  used on input line 11.
 (pdftex.def)             Requested size: 113.81102pt x 72.45508pt.
 <~/templates//univlille.png, id=42, 389.455pt x 130.4875pt>
 File: ~/templates//univlille.png Graphic file (type png)
 <use ~/templates//univlille.png>
-Package pdftex.def Info: ~/templates//univlille.png  used on input line 12.
+Package pdftex.def Info: ~/templates//univlille.png  used on input line 13.
 (pdftex.def)             Requested size: 170.71652pt x 57.19763pt.
 <../images//titlepage.PNG, id=43, 772.38562pt x 526.96875pt>
 File: ../images//titlepage.PNG Graphic file (type png)
 <use ../images//titlepage.PNG>
-Package pdftex.def Info: ../images//titlepage.PNG  used on input line 21.
+Package pdftex.def Info: ../images//titlepage.PNG  used on input line 22.
 (pdftex.def)             Requested size: 369.88582pt x 252.35513pt.
  [1
 
@@ -294,9 +319,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 	\newpage
+l.29 	\newpage
                [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
@@ -304,10 +329,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 File: ../images/anotated//grafcet1.PNG Graphic file (type png)
 <use ../images/anotated//grafcet1.PNG>
 Package pdftex.def Info: ../images/anotated//grafcet1.PNG  used on input line 4
-1.
+2.
 (pdftex.def)             Requested size: 426.79134pt x 225.92589pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 41--42
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 42--43
  [][] 
  []
 
@@ -315,14 +340,14 @@ Overfull \hbox (36.79134pt too wide) in paragraph at lines 41--42
 <../images//placementUnePiece.PNG, id=78, 906.38625pt x 554.07pt>
 File: ../images//placementUnePiece.PNG Graphic file (type png)
 <use ../images//placementUnePiece.PNG>
-Package pdftex.def Info: ../images//placementUnePiece.PNG  used on input line 4
-9.
+Package pdftex.def Info: ../images//placementUnePiece.PNG  used on input line 5
+0.
 (pdftex.def)             Requested size: 341.43306pt x 208.71417pt.
 <../images/anotated//admission_pieces.PNG, id=79, 137.7647pt x 255.20343pt>
 File: ../images/anotated//admission_pieces.PNG Graphic file (type png)
 <use ../images/anotated//admission_pieces.PNG>
 Package pdftex.def Info: ../images/anotated//admission_pieces.PNG  used on inpu
-t line 70.
+t line 71.
 (pdftex.def)             Requested size: 142.26378pt x 263.5634pt.
 
 
@@ -333,27 +358,60 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ../images/anotated//move_to_box.PNG Graphic file (type png)
 <use ../images/anotated//move_to_box.PNG>
 Package pdftex.def Info: ../images/anotated//move_to_box.PNG  used on input lin
-e 89.
+e 90.
 (pdftex.def)             Requested size: 341.43306pt x 261.24492pt.
  [5 <../images/anotated//admission_pieces.PNG>] [6 <../images/anotated//move_to
-_box.PNG>] [7] (./rapport.aux)
+_box.PNG>]
+<../images/anotated//remplissage_boite_random_program.PNG, id=105, 495.35063pt 
+x 311.66437pt>
+File: ../images/anotated//remplissage_boite_random_program.PNG Graphic file (ty
+pe png)
+<use ../images/anotated//remplissage_boite_random_program.PNG>
+Package pdftex.def Info: ../images/anotated//remplissage_boite_random_program.P
+NG  used on input line 100.
+(pdftex.def)             Requested size: 341.43306pt x 214.82037pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+[7 <../images/anotated//remplissage_boite_random_program.PNG>] [8]
+<../images/anotated//Admission_finale.png, id=129, 2566.58875pt x 2247.39626pt>
+
+File: ../images/anotated//Admission_finale.png Graphic file (type png)
+<use ../images/anotated//Admission_finale.png>
+Package pdftex.def Info: ../images/anotated//Admission_finale.png  used on inpu
+t line 136.
+(pdftex.def)             Requested size: 341.43306pt x 298.96167pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+<../images//boite_triee.PNG, id=130, 1079.53313pt x 652.68843pt>
+File: ../images//boite_triee.PNG Graphic file (type png)
+<use ../images//boite_triee.PNG>
+Package pdftex.def Info: ../images//boite_triee.PNG  used on input line 148.
+(pdftex.def)             Requested size: 369.88582pt x 223.63408pt.
+[9 <../images/anotated//Admission_finale.png>] [10 <../images//boite_triee.PNG>
+] (./rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 6ECC6EF40EB4560E2E97298E1515BAF2;1597.
  ) 
 Here is how much of TeX's memory you used:
- 7839 strings out of 478994
- 116093 string characters out of 5859688
- 412575 words of memory out of 5000000
- 25206 multiletter control sequences out of 15000+600000
+ 9476 strings out of 478994
+ 138078 string characters out of 5859688
+ 446456 words of memory out of 5000000
+ 26809 multiletter control sequences out of 15000+600000
  407684 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,5n,74p,1544b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,5n,74p,1544b,1078s stack positions out of 5000i,500n,10000p,200000b,80000s
 </app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></app/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on rapport.pdf (8 pages, 2154962 bytes).
+Output written on rapport.pdf (11 pages, 3835926 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {4.1}Nouveau programme de déplacement}{5}{subsection.4.1}%
 \contentsline {paragraph}{Logique de gestion des pièces}{5}{section*.5}%
 \contentsline {paragraph}{Algorithme de positionnement}{5}{section*.6}%
-\contentsline {section}{\numberline {5}Tri par type de pièce}{7}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Nouvelle admission de pièces}{7}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Ajustement du programme de déplacement}{7}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}%
+\contentsline {section}{\numberline {5}Tri par type de pièce}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Nouvelle admission de pièces}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Ajustement du programme de déplacement}{9}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Conclusion}{10}{section.6}%

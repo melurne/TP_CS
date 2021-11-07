@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage[section]{placeins}
 \usepackage{hyperref}
+\usepackage{listings}
 \graphicspath{{~/templates/}, {../images/anotated/}, {../images/}}
 
 \makeindex
@@ -90,13 +91,66 @@
 				\caption{Algorithme de positionnement}
 			\end{figure}
 		
-			Tout d’abord nous gérons les déplacements sur les lignes. Si les compteurs ont atteint la bonne valeur nous pouvons passer au déplacement sur les colonnes sinon nous faisons un déplacement sur la ligne en incrémentant le compteur. Nous faisons une pause de 3 secondes après le déplacement pour s’assurer que le capteur de fin de mouvement soit bien réinitialisé, ensuite nous vérifions que les valeurs du compteur et recommençons tant qu’il n’est pas arrivé à la bonne ligne. Pour les déplacements sur les colonnes le principe est le même. La macro-étape pour le retour à la position initiale est la même, seuls les actionneurs changent. Pour se rendre à la case, nous utilisons un certain nombre de fois les actionneurs Retour\_bras et Droite\_bras et pour le retour à la position initiale nous utilisons ce même nombre de fois les actionneurs Aller\_bras et Gauche\_bras.
+			Tout d’abord nous gérons les déplacements sur les lignes. Si les compteurs ont atteint la bonne valeur nous pouvons passer au déplacement sur les colonnes sinon nous faisons un déplacement sur la ligne en incrémentant le compteur. Nous faisons une pause de 3 secondes après le déplacement pour s’assurer que le capteur de fin de mouvement soit bien réinitialisé, ensuite nous vérifions que les valeurs du compteur et recommençons tant qu’il n’est pas arrivé à la bonne ligne. Pour les déplacements sur les colonnes le principe est le même. La macro-étape pour le retour à la position initiale est la même, seuls les actionneurs changent. Pour se rendre à la case, nous utilisons un certain nombre de fois les actionneurs Retour\_bras et Droite\_bras et pour le retour à la position initiale nous utilisons ce même nombre de fois les actionneurs Aller\_bras et Gauche\_bras.\newpage
+
+			
+
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=12cm]{remplissage_boite_random_program.PNG}
+				\caption{Grafcet final}
+			\end{figure}
+			\begin{figure}
+				\centering
+				\begin{lstlisting}	
+	case cpt of
+		0 : cpt_ligne := 1; cpt_colonne := 0;
+		1 : cpt_ligne := 2; cpt_colonne := 0;
+		2 : cpt_ligne := 3; cpt_colonne := 0;
+		3 : cpt_ligne := 1; cpt_colonne := 1;
+		4 : cpt_ligne := 2; cpt_colonne := 1;
+		5 : cpt_ligne := 3; cpt_colonne := 1;
+		6 : cpt_ligne := 1; cpt_colonne := 2;
+		7 : cpt_ligne := 2; cpt_colonne := 2;
+		8 : cpt_ligne := 3; cpt_colonne := 2;
+	end_case;
+				\end{lstlisting}
+				\caption{Init\_cpts.st}
+			\end{figure}
+		
+			Nous avons ci dessus l’assemblage de toutes les macro-étapes formant le grafcet de remplissage de la boîte sans prendre en compte le type de pièce. En premier lieu nous attendons une caisse, puis nous vérifions qu’il y ait bien une pièce. Ensuite la pièce est prise par le préhenseur (macro-étape Pick\_up).\\
+			
+			Ensuite la pièce est amenée au-dessus de la case correspondante grâce à la macro-étape move\_to\_box , puis posée dans la case avec la macro-étape Place. Le bras est ensuite amené à sa position initale avec la macro-étape “...”. Ensuite grâce au compteur on peut vérifier si la caisse est pleine ou non. Si elle est pleine, elle va être évacuée sinon une nouvelle pièce va être placée dans la caisse.
+			
 
 	\section{Tri par type de pièce}
 		\subsection{Nouvelle admission de pièces}
 		
+		Une fois la boîte remplie sans ordre particulier des pièces, il faut maintenant trier les pièces par type. Chaque type doit correspondre à une colonne particulière. Nous avons choisi de mettre les pièces de type 1 dans la colonne C0, les pièces de type 2 dans la colonne C1 et les pièces de type 3 dans la colonne C2. \\
+		Nous reprenons la logique du compteur précédent ou cette fois pour le compteur de 0 à 2 ce sont les pièces de type 1, pour le compteur de 3 à 5 ce sont les pièces de type 2 et pour des valeurs de 6 à 8 ce sont les pièces de type 3. Chaque valeur de compteur à un nombre de déplacement défini pour que les pièces soit placés au bon endroit. Nous utilisons ces valeurs pour faire aller le bras vers la bonne case et aussi le faire revenir à la position initiale. \\
+		Nous avons aussi des compteurs pour les colonnes nous permettant de savoir si elles sont pleines ou non. Ces compteurs nous permettent aussi d’évacuer les pièces lorsque la colonne correspondante est pleine. 
+		Cela nous a donné le grafcet suivant :\newpage
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=12cm]{Admission_finale.png}
+			\caption{Admission finale}
+		\end{figure}
+		
+		Tout d’abord nous activons le convoyeur jusqu’à ce que le détecteur de type de pièce (presence\_code) nous envoie un signal ensuite selon le type si la colonne est pleine, nous réactivons le convoyeur pour évacuer celle-ci et le grafcet revient à l’étape initiale et nous attendons la détection d’un code. Si la colonne correspondante n’est pas pleine, nous activons le convoyeur jusqu’à ce que la pièce soit bien positionnée (Piece\_pres). Nous incrémentons aussi les compteurs de colonne. Une fois la pièce saisie par le préhenseur, nous attendons la nouvelle détection d’un code de pièce.
+		
 		\subsection{Ajustement du programme de déplacement}
+		
+		Le grafcet est ici sensiblement identique à celui de la partie précedente à la différence près que l'on initialise 2 compteurs pour lignes et colonnes. On réalise alors le case sur le code\_piece une seule fois au lieu de 2 ce qui permet d'éviter que le code ou les compteurs de pièces ne changent pendant le mouvement du bras ce qui, avec le grafcet précedent, rendrait impossible le retour en position initiale.\\
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=13cm]{boite_triee.PNG}
+			\caption{Remplissage d'une boîte triée}
+		\end{figure}
 	
 	\section{Conclusion}
+	
+	Pour conclure, notre grafcet final répond à la problématique posée. La caisse est bien remplie avec une colonne correspondant à un type de pièce. Les pièces sont bien évacuées lorsque la colonne correspondante est pleine. L’inconvénient de notre programme est qu’il est long à l'exécution, en effet pour chaque déplacement nous avons une pause de 3 secondes le temps que le capteur de position (bras\_fin\_mouv) soit réinitialisé. Nous avons préféré nous concentrer sur la bonne exécution de toutes les tâches du programme plutôt que sur son efficacité. Nous aurions dû travailler sur front montant plutôt que d’attendre la réinitialisation du capteur mais l’option front montant n’étant pas disponible sur le logiciel, nous n’avons pas essayé de la reproduire. Ce qui nous a posé le plus de problème a été la gestion des délais pour la mise en place des pièces. A certain moment, les mouvements étaient pris en compte dans le programme mais pas effectués dans la simulation. 
 	
 \end{document}
