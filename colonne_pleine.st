@@ -1,0 +1,1 @@
+(code_piece == 1 AND cpt_1 == 3) OR (code_piece == 2 AND cpt_2 == 3) OR (code_piece == 3 AND cpt_3 == 3)
